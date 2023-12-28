@@ -1,0 +1,26 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "app.js",  
+        "use": "@now/node-server"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/app.js" 
+      }
+    ],
+    "env": {
+      "NODE_ENV": "production"
+      
+    },
+    "functions": {
+      "api/**/*.js": {
+        "runtime": "nodejs14.x",
+        "includeFiles": ["api/**/*"]
+      }
+    }
+  }
+  
