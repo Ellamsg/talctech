@@ -6,7 +6,9 @@
     "host": "127.0.0.1",
     "dialect": "mysql",
     "define": { "charset": "utf8mb4", "dialectOptions": { "collate": "utf8mb4_bin" } },
-    "dialectOptions": { "collate": "utf8mb4_bin" } 
+    "dialectOptions": { "collate": "utf8mb4_bin" } ,
+    "dialectModule": "mysql2"
+
     },
    
   "test": {
