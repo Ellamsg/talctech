@@ -1,0 +1,28 @@
+{
+  "development": {
+    "username": "Abdulraqeeb",
+    "password": "admin",
+    "database": "talctech",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "define": { "charset": "utf8mb4", "dialectOptions": { "collate": "utf8mb4_bin" } },
+    "dialectOptions": { "collate": "utf8mb4_bin" } 
+    },
+   
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "talctech2",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "define": { "charset": "utf8", "dialectOptions": { "collate": "utf8_general_ci" } }
+  },
+  "production": {
+    "username": "talcycqy_root",
+    "password": "t0021FGF!6&1",
+    "database": "talcycqy_taltech_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "define": { "charset": "utf8", "dialectOptions": { "collate": "utf8_general_ci" } }
+  }
+}
