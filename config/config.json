@@ -5,6 +5,7 @@
     "database": "sakila",
     "host": "127.0.0.1",
     "dialect": "mysql",
+    "dialectModule": "mysql2",
     "define": { "charset": "utf8mb4", "dialectOptions": { "collate": "utf8mb4_bin" } }
   },
   "test": {
