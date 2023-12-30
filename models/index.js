@@ -1,3 +1,5 @@
+// models/index.js
+
 'use strict';
 
 const fs = require('fs');
@@ -12,7 +14,11 @@ let sequelize;
 if (config.use_env_variable) {
   sequelize = new Sequelize(process.env[config.use_env_variable], config);
 } else {
-  sequelize = new Sequelize(config.database, config.username, config.password, config);
+  // Add the 'dialect' property to the configuration
+  sequelize = new Sequelize(config.database, config.username, config.password, {
+    ...config,
+    dialectModule: "mysql2"  // Add the 'dialect' property
+  });
 }
 
 fs
